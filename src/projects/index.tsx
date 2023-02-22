@@ -1,3 +1,4 @@
+import { Divider } from 'antd';
 import { useTranslation } from 'react-i18next';
 import Container from '../Container';
 import Title from '../Title';
@@ -13,8 +14,11 @@ export default function ProjectList() {
       <Container>
         <Title>{t('Projects')}</Title>
         <EsgProject />
+        <Divider />
         <KawaiiProject />
+        <Divider />
         <ElisaProject />
+        <Divider />
         <AdidasProject />
       </Container>
     </div>

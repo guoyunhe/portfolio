@@ -24,15 +24,15 @@ export default function Project({
 }: ProjectProps) {
   const { t } = useTranslation();
   return (
-    <Row gutter={20} style={{ marginBottom: 30 }}>
-      <Col md={12} lg={8}>
+    <Row gutter={[20, 20]} style={{ marginBottom: 30 }} wrap>
+      <Col xs={24} md={12} lg={8}>
         <Carousel autoplay style={{ width: '100%' }}>
           {images.map((img) => (
             <img key={img} src={img} />
           ))}
         </Carousel>
       </Col>
-      <Col md={12} lg={16} style={{ display: 'flex', flexDirection: 'column' }}>
+      <Col xs={24} md={12} lg={16} style={{ display: 'flex', flexDirection: 'column' }}>
         <Typography.Title level={2}>{name}</Typography.Title>
         <Typography.Paragraph>
           <Space size={8}>
