@@ -1,6 +1,7 @@
 import { useTranslation } from 'react-i18next';
 import Container from '../Container';
 import Title from '../Title';
+import AdidasProject from './adidas';
 import ElisaProject from './elisa';
 
 export default function ProjectList() {
@@ -10,6 +11,7 @@ export default function ProjectList() {
       <Container>
         <Title>{t('Projects')}</Title>
         <ElisaProject />
+        <AdidasProject />
       </Container>
     </div>
   );

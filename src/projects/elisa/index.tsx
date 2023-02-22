@@ -8,6 +8,7 @@ export default function ElisaProject() {
   return (
     <Project
       name="Elisa 5G"
+      year={2020}
       images={[img1, img2]}
       tags={[t('ecommerce'), t('marketing')]}
       skills={['react', 'sass', 'next.js', 'contentful', 'shopify']}
