@@ -4,6 +4,7 @@ import Title from '../Title';
 import AdidasProject from './adidas';
 import ElisaProject from './elisa';
 import EsgProject from './esg';
+import KawaiiProject from './kawaii';
 
 export default function ProjectList() {
   const { t } = useTranslation();
@@ -12,6 +13,7 @@ export default function ProjectList() {
       <Container>
         <Title>{t('Projects')}</Title>
         <EsgProject />
+        <KawaiiProject />
         <ElisaProject />
         <AdidasProject />
       </Container>
