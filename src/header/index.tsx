@@ -75,6 +75,7 @@ export default function Header() {
                 words={[
                   'front-end',
                   'react',
+                  'mobile',
                   'back-end',
                   'node.js',
                   'mongodb',
