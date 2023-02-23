@@ -11,7 +11,7 @@ export default function Contact() {
     <div>
       <Container>
         <Title>{t('Contact')}</Title>
-        <Space size={20} align="center">
+        <Space size={20} align="center" style={{ marginTop: 50, marginBottom: 50 }}>
           <Popover
             placement="topLeft"
             content={<img src={wechatQrcode} style={{ width: 300 }} />}
