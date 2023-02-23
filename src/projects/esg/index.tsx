@@ -12,7 +12,7 @@ export default function EsgProject() {
       name="Green Carbon Neutrality"
       year={2022}
       images={[img1, img2, img3]}
-      tags={[t('business'), t('environment'), t('public')]}
+      tags={[t('enterprise'), t('environment'), t('public')]}
       skills={['react', 'material-ui', 'laravel', 'php', 'mysql']}
       link="https://greenunite.co/"
     >
