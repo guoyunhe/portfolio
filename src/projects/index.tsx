@@ -10,7 +10,7 @@ import KawaiiProject from './kawaii';
 export default function ProjectList() {
   const { t } = useTranslation();
   return (
-    <div style={{ backgroundColor: 'rgba(255,255,255,0.5)', backdropFilter: 'blur(20px)' }}>
+    <div>
       <Container>
         <Title>{t('Projects')}</Title>
         <EsgProject />
