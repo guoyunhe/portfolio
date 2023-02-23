@@ -1,3 +1,4 @@
+import { Typography } from 'antd';
 import { useTranslation } from 'react-i18next';
 import Project from '../Project';
 import img1 from './images/kawaii-1.webp';
@@ -15,7 +16,7 @@ export default function KawaiiProject() {
       skills={['wordpress', 'woocommerce', 'js', 'css', 'php', 'mysql']}
       link="https://kawaiidream.fi/"
     >
-      TODO
+      <Typography.Paragraph>{t('kawaii-intro')}</Typography.Paragraph>
     </Project>
   );
 }

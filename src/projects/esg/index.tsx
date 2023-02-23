@@ -1,3 +1,4 @@
+import { Typography } from 'antd';
 import { useTranslation } from 'react-i18next';
 import Project from '../Project';
 import img1 from './images/esg-1.webp';
@@ -15,7 +16,7 @@ export default function EsgProject() {
       skills={['react', 'material-ui', 'laravel', 'php', 'mysql']}
       link="https://greenunite.co/"
     >
-      TODO
+      <Typography.Paragraph>{t('esg-intro')}</Typography.Paragraph>
     </Project>
   );
 }

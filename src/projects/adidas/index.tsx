@@ -8,7 +8,7 @@ export default function AdidasProject() {
   const { t } = useTranslation('projects');
   return (
     <Project
-      name="Adidas Design Language"
+      name="adidas Design Language"
       year={2019}
       images={[img1, img2]}
       tags={[t('ecommerce'), t('marketing')]}

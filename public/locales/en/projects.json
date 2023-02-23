@@ -1,8 +1,11 @@
 {
   "ecommerce": "ecommerce",
   "marketing": "marketing",
-  "adidas-intro": "adidas-intro",
+  "adidas-intro": "adidas Design Language is the design system and component library made for adidas, Reebok and Yeezy websites.",
+  "elisa-intro": "Elisa is one of the largest 5G service providers in Finland. Elisa 5G webshop provides 5G smart phones, SIM cards, and accessories etc.",
   "business": "business",
   "environment": "environment",
-  "public": "public"
+  "public": "public",
+  "esg-intro": "Green Carbon Neutrality is an ESG report platform that serves HKEX listed companies.",
+  "kawaii-intro": "Kawaii Dream is a Finnish webshop of Japanese ACG related products."
 }

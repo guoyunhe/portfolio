@@ -1,3 +1,4 @@
+import { Typography } from 'antd';
 import { useTranslation } from 'react-i18next';
 import Project from '../Project';
 import img1 from './images/elisa-1.webp';
@@ -14,7 +15,7 @@ export default function ElisaProject() {
       skills={['react', 'sass', 'next.js', 'contentful', 'shopify']}
       link="https://elisa.fi/5g/"
     >
-      TODO
+      <Typography.Paragraph>{t('elisa-intro')}</Typography.Paragraph>
     </Project>
   );
 }

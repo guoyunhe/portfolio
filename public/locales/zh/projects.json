@@ -1,8 +1,11 @@
 {
   "ecommerce": "电子商务",
   "marketing": "营销推广",
-  "adidas-intro": "",
+  "adidas-intro": "adidas Design Language 是阿迪达斯（adidas），锐步（Reebok）及 Yeezy 品牌网站的设计语言和 UI 组件库。",
+  "elisa-intro": "Elisa 是芬兰最大的 5G 网络运营商之一。Elisa 5G 网店提供 5G 手机，SIM 卡以及配件等商品。",
   "business": "",
-  "environment": "",
-  "public": ""
+  "environment": "环境",
+  "public": "公众",
+  "esg-intro": "Green Carbon Neutrality 是一个 ESG 报告平台，专门服务港交所上市公司。",
+  "kawaii-intro": "Kawaii Dream 是一家芬兰的日系二次元周边商品网店。"
 }
