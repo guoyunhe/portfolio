@@ -1,5 +1,6 @@
 import { ConfigProvider } from 'antd';
 import ClientList from './clients';
+import Contact from './contact';
 import Header from './header';
 import ProjectList from './projects';
 
@@ -16,6 +17,7 @@ export default function App() {
       >
         <ProjectList />
         <ClientList />
+        <Contact />
       </div>
     </ConfigProvider>
   );
