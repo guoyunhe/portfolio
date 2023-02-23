@@ -11,7 +11,7 @@ export default function App() {
         style={{
           backgroundColor: 'rgba(255,255,255,0.5)',
           backdropFilter: 'blur(20px)',
-          boxShadow: '0 0 50px rgba(0,0,0,0.5)',
+          boxShadow: '0 0 50px rgba(0,0,0,0.3)',
         }}
       >
         <ProjectList />

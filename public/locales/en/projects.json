@@ -1,4 +1,8 @@
 {
   "ecommerce": "ecommerce",
-  "marketing": "marketing"
+  "marketing": "marketing",
+  "adidas-intro": "adidas-intro",
+  "business": "business",
+  "environment": "environment",
+  "public": "public"
 }

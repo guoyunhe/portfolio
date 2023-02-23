@@ -42,18 +42,30 @@ export default function Header() {
           }}
         >
           <Typography.Title style={{ margin: 0, color: '#fff' }}>
-            <Typewriter
-              words={[t('Full Stack'), t('Business'), t('Innovation')]}
-              loop={false}
-              cursor
-              cursorStyle="|"
-            />
+            I am a&nbsp;
+            <span style={{ color: '#bae637' }}>
+              <Typewriter
+                words={[
+                  'front-end',
+                  'react',
+                  'back-end',
+                  'node.js',
+                  'laravel',
+                  'php',
+                  'full-stack',
+                ]}
+                loop={false}
+                cursor
+                cursorStyle="|"
+              />
+            </span>
+            developer
           </Typography.Title>
         </div>
         <div
           style={{
             position: 'absolute',
-            bottom: 0,
+            bottom: 10,
             left: 0,
             width: '100%',
             textAlign: 'center',
