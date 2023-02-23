@@ -1,11 +1,36 @@
 import { ArrowDownOutlined } from '@ant-design/icons';
 import { Typography } from 'antd';
+import { useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Typewriter } from 'react-simple-typewriter';
 import bg1 from './bg-1.webp';
 
 export default function Header() {
   const { t } = useTranslation();
+
+  useEffect(() => {
+    // https://stackoverflow.com/a/50683190
+    const appHeight = () => {
+      const doc = document.documentElement;
+      doc.style.setProperty('--header-height', `${window.innerHeight}px`);
+      const imageRatio = 3900 / 2800;
+      const headerRatio = window.innerWidth / window.innerHeight;
+      let imageWidth;
+      if (imageRatio > headerRatio) {
+        imageWidth = window.innerHeight * imageRatio;
+      } else {
+        imageWidth = window.innerWidth;
+      }
+      const fontSize = imageWidth / 50;
+      doc.style.setProperty('--header-font-size', `${fontSize}px`);
+    };
+    window.addEventListener('resize', appHeight);
+    appHeight();
+    return () => {
+      window.removeEventListener('resize', appHeight);
+    };
+  }, []);
+
   return (
     <>
       <header
@@ -15,7 +40,7 @@ export default function Header() {
           top: 0,
           left: 0,
           width: '100%',
-          height: 'var(--app-height, 100vh)',
+          height: 'var(--header-height, 100vh)',
           color: '#fff',
         }}
       >
@@ -41,7 +66,9 @@ export default function Header() {
             alignItems: 'center',
           }}
         >
-          <Typography.Title style={{ margin: 0, color: '#fff' }}>
+          <Typography.Title
+            style={{ fontSize: 'var(--header-font-size, 30px)', margin: 0, color: '#fff' }}
+          >
             I am a&nbsp;
             <span style={{ color: '#bae637' }}>
               <Typewriter
@@ -50,8 +77,10 @@ export default function Header() {
                   'react',
                   'back-end',
                   'node.js',
+                  'mongodb',
                   'laravel',
                   'php',
+                  'mysql',
                   'full-stack',
                 ]}
                 loop={false}
@@ -75,7 +104,7 @@ export default function Header() {
           <ArrowDownOutlined />
         </div>
       </header>
-      <div style={{ height: '100vh' }}></div>
+      <div style={{ height: 'var(--header-height, 100vh)' }}></div>
     </>
   );
 }
